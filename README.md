@@ -122,4 +122,5 @@ Feedstock Maintainers
 =====================
 
 * [@dcherian](https://github.com/dcherian/)
+* [@malmans2](https://github.com/malmans2/)
 
