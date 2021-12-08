@@ -28,6 +28,7 @@ test:
     - cf_xarray
   requires:
     - pytest
+    - pkg_resources
 
 about:
   home: https://github.com/xarray-contrib/cf-xarray
