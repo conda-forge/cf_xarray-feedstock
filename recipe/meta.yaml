@@ -25,6 +25,7 @@ requirements:
     - numpy >=1.15
     - pandas >=0.25
     - setuptools >=41.2
+    - xarray
 
 test:
   imports:
