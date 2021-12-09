@@ -10,25 +10,29 @@ source:
   sha256: 25097a813fbf484d23e7cd3833b2677d38d52e69d09d39a0068b82ade7271245
 
 build:
-  noarch: python
   number: 0
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
-    - pip
-    - setuptools_scm
-  run:
-    - xarray
     - python >=3.6
+    - pip
+    - setuptools >=41.2
+    - setuptools-scm
+  run:
+    - python >=3.6
+    - numpy >=1.15
+    - pandas >=0.25
+    - setuptools >=41.2
 
 test:
   imports:
     - cf_xarray
+  commands:
+    - pip check
   requires:
-    - pytest
-    - setuptools_scm
+    - pip
 
 about:
   home: https://github.com/xarray-contrib/cf-xarray
