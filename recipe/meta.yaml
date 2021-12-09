@@ -1,5 +1,5 @@
 {% set name = "cf_xarray" %}
-{% set version = "0.6.1" %}
+{% set version = "0.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,27 +7,33 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 30e0673eec574541b93b5602b515c5804fcd71a872fd6059fbc8a9a5c2c8c838
+  sha256: 25097a813fbf484d23e7cd3833b2677d38d52e69d09d39a0068b82ade7271245
 
 build:
-  noarch: python
   number: 0
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
-    - pip
-    - setuptools_scm
-  run:
-    - xarray
     - python >=3.6
+    - pip
+    - setuptools >=41.2
+    - setuptools-scm
+  run:
+    - python >=3.6
+    - numpy >=1.15
+    - pandas >=0.25
+    - setuptools >=41.2
+    - xarray
 
 test:
   imports:
     - cf_xarray
+  commands:
+    - pip check
   requires:
-    - pytest
+    - pip
 
 about:
   home: https://github.com/xarray-contrib/cf-xarray
