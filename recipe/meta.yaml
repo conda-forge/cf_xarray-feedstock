@@ -16,15 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
     - setuptools >=41.2
     - setuptools-scm
   run:
-    - python >=3.6
-    - numpy >=1.15
-    - pandas >=0.25
-    - setuptools >=41.2
+    - python >=3.8
     - xarray
 
 test:
