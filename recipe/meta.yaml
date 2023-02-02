@@ -18,8 +18,9 @@ requirements:
   host:
     - python >=3.8
     - pip
-    - setuptools >=41.2
-    - setuptools-scm
+    - setuptools >=45
+    - setuptools-scm >=6.2
+    - xarray
   run:
     - python >=3.8
     - xarray
