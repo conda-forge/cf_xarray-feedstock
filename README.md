@@ -152,5 +152,6 @@ Feedstock Maintainers
 
 * [@aulemahal](https://github.com/aulemahal/)
 * [@dcherian](https://github.com/dcherian/)
+* [@kthyng](https://github.com/kthyng/)
 * [@malmans2](https://github.com/malmans2/)
 
