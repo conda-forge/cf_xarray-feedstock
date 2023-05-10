@@ -1,11 +1,11 @@
-About cf_xarray
-===============
+About cf_xarray-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cf_xarray-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/xarray-contrib/cf-xarray
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cf_xarray-feedstock/blob/main/LICENSE.txt)
 
 Summary: A lightweight convenience wrapper for using CF attributes on xarray objects.
 
