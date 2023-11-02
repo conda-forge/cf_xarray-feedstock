@@ -23,7 +23,7 @@ requirements:
     - xarray
   run:
     - python >=3.9
-    - xarray >= 2022.03.0
+    - xarray >=2022.03.0
 
 test:
   imports:
