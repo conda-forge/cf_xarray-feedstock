@@ -16,14 +16,14 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - pip
     - setuptools >=45
     - setuptools-scm >=6.2
     - xarray
   run:
-    - python >=3.8
-    - xarray
+    - python >=3.9
+    - xarray >= 2022.03.0
 
 test:
   imports:
