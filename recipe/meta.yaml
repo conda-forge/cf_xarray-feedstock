@@ -10,20 +10,20 @@ source:
   sha256: 4e8037c19100e8703b75a0f62ea1110182f676d6bbc05d17efeda0e003a5708d
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python >=3.9
+    - python >=3.10
     - pip
     - setuptools >=45
     - setuptools-scm >=6.2
-    - xarray
+    - xarray >=2022.03.0
   run:
-    - python >=3.9
-    - xarray
+    - python >=3.10
+    - xarray >=2022.03.0
 
 test:
   imports:
