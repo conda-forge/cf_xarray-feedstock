@@ -35,6 +35,26 @@ test:
     - pip
     - python {{ python_min }}
 
+outputs:
+  - name: cf_xarray
+  - name: cf-xarray
+    build:
+      noarch: python
+    requirements:
+      host:
+        - python {{ python_min }}
+      run:
+        - {{ pin_subpackage("cf_xarray", max_pin="x.x.x") }}
+        - python >={{ python_min }}
+    test:
+      requires:
+        - pip
+        - python {{ python_min }}
+      commands:
+        - pip check
+      imports:
+        - cf_xarray
+
 about:
   home: https://github.com/xarray-contrib/cf-xarray
   license: Apache-2.0
