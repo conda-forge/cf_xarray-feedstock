@@ -34,6 +34,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-cf--xarray-green.svg)](https://anaconda.org/conda-forge/cf-xarray) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cf-xarray.svg)](https://anaconda.org/conda-forge/cf-xarray) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cf-xarray.svg)](https://anaconda.org/conda-forge/cf-xarray) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cf-xarray.svg)](https://anaconda.org/conda-forge/cf-xarray) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-cf_xarray-green.svg)](https://anaconda.org/conda-forge/cf_xarray) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cf_xarray.svg)](https://anaconda.org/conda-forge/cf_xarray) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cf_xarray.svg)](https://anaconda.org/conda-forge/cf_xarray) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cf_xarray.svg)](https://anaconda.org/conda-forge/cf_xarray) |
 
 Installing cf_xarray
@@ -46,41 +47,41 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `cf_xarray` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `cf-xarray, cf_xarray` can be installed with `conda`:
 
 ```
-conda install cf_xarray
-```
-
-or with `mamba`:
-
-```
-mamba install cf_xarray
-```
-
-It is possible to list all of the versions of `cf_xarray` available on your platform with `conda`:
-
-```
-conda search cf_xarray --channel conda-forge
+conda install cf-xarray cf_xarray
 ```
 
 or with `mamba`:
 
 ```
-mamba search cf_xarray --channel conda-forge
+mamba install cf-xarray cf_xarray
+```
+
+It is possible to list all of the versions of `cf-xarray` available on your platform with `conda`:
+
+```
+conda search cf-xarray --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search cf-xarray --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search cf_xarray --channel conda-forge
+mamba repoquery search cf-xarray --channel conda-forge
 
-# List packages depending on `cf_xarray`:
-mamba repoquery whoneeds cf_xarray --channel conda-forge
+# List packages depending on `cf-xarray`:
+mamba repoquery whoneeds cf-xarray --channel conda-forge
 
-# List dependencies of `cf_xarray`:
-mamba repoquery depends cf_xarray --channel conda-forge
+# List dependencies of `cf-xarray`:
+mamba repoquery depends cf-xarray --channel conda-forge
 ```
 
 

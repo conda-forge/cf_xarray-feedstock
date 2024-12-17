@@ -11,7 +11,7 @@ source:
   sha256: 7b45319fc315175854c9e701a84ebb795eb4b2764a2d05bd2d9d3ea87d004d18
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -34,6 +34,26 @@ test:
   requires:
     - pip
     - python {{ python_min }}
+
+outputs:
+  - name: cf_xarray
+  - name: cf-xarray
+    build:
+      noarch: python
+    requirements:
+      host:
+        - python {{ python_min }}
+      run:
+        - {{ pin_subpackage("cf_xarray", max_pin="x.x.x") }}
+        - python >={{ python_min }}
+    test:
+      requires:
+        - pip
+        - python {{ python_min }}
+      commands:
+        - pip check
+      imports:
+        - cf_xarray
 
 about:
   home: https://github.com/xarray-contrib/cf-xarray
