@@ -21,10 +21,10 @@ requirements:
     - pip
     - setuptools >=45
     - setuptools-scm >=6.2
-    - xarray >=2022.03.0
+    - xarray >=2023.09.0
   run:
     - python >={{ python_min }}
-    - xarray >=2022.03.0
+    - xarray >=2023.09.0
 
 test:
   imports:
