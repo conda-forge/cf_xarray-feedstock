@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "cf_xarray" %}
-{% set version = "0.10.4" %}
+{% set version = "0.10.5" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 047dd732cc7f154c7aa9d5c00b77c64e2c538258f0b6e7565a4b2c7715ee8aba
+  sha256: 4aa629cd9e8c3e53253270e48a6080e62065b78c4e597f01c80b5f5b372d2331
 
 build:
   number: 0
