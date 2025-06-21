@@ -35,7 +35,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-cf--xarray-green.svg)](https://anaconda.org/conda-forge/cf-xarray) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cf-xarray.svg)](https://anaconda.org/conda-forge/cf-xarray) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cf-xarray.svg)](https://anaconda.org/conda-forge/cf-xarray) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cf-xarray.svg)](https://anaconda.org/conda-forge/cf-xarray) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-cf_xarray-green.svg)](https://anaconda.org/conda-forge/cf_xarray) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cf_xarray.svg)](https://anaconda.org/conda-forge/cf_xarray) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cf_xarray.svg)](https://anaconda.org/conda-forge/cf_xarray) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cf_xarray.svg)](https://anaconda.org/conda-forge/cf_xarray) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-cf__xarray-green.svg)](https://anaconda.org/conda-forge/cf_xarray) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cf_xarray.svg)](https://anaconda.org/conda-forge/cf_xarray) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cf_xarray.svg)](https://anaconda.org/conda-forge/cf_xarray) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cf_xarray.svg)](https://anaconda.org/conda-forge/cf_xarray) |
 
 Installing cf_xarray
 ====================
