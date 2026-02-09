@@ -11,7 +11,7 @@ source:
   sha256: e10ee37b0ed3ba36f42346360f2bc070c690ddc73bb9dcdd9463b3a221453be3
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -24,7 +24,7 @@ requirements:
     - xarray >=2023.09.0
   run:
     - python >={{ python_min }}
-    - xarray >=2023.09.0
+    - xarray >=2024.7.0
 
 test:
   imports:
