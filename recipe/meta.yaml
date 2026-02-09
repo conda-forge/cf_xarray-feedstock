@@ -24,7 +24,7 @@ requirements:
     - xarray >=2023.09.0
   run:
     - python >={{ python_min }}
-    - xarray >=2023.09.0
+    - xarray >=2024.7.0
 
 test:
   imports:
